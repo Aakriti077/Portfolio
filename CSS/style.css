@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&family=Grey+Qo&family=MonteCarlo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&family=Grey+Qo&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=MonteCarlo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Mozilla+Text:wght@200..700&display=swap');
+
+body {
+    /* background-color: rgb(255, 255, 237); */
+    background-image: url(../IMG/background.jpg);
+    background-size: cover;
+    margin: 0;
+    min-height: 100%;
+    background-position: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* navbar */
+.logo {
+    height: 35px;
+    width: 35px;
+    /* margin-top: 7px;
+    margin-right: 20vh;
+    margin-left: 3px;
+    padding: 4px; */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 90px;
+    align-items: center;
+    /* background-color: rgba(255, 201, 210, 0); */
+    /* position: relative; */
+    position: sticky;
+    /* justify-content: center; */
+
+}
+
+.icon {
+    height: 35px;
+    cursor: pointer;
+}
+
+.navbar {
+    display: flex;
+    list-style: none;
+    margin: -12px 0 0px 0;
+    padding: 0;
+    font-family: "Lato", sans-serif;
+    font-size: 17px;
+    font-weight: 800;
+    font-style: normal;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    gap: 50px;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar li a:hover {
+    transition: 4ms;
+    color: rgb(252, 187, 73);
+}
+
+.header-right {
+    margin-top: 0px;
+    justify-content: center;
+    display: flex;
+    gap: 25px;
+}
+
+.header-right a img {
+    transition: transform 0.3s ease;
+
+}
+
+.header-right a img:hover {
+    transform: translateY(-3px);
+}
+
+/* body part */
+.myphoto {
+    height: 440px;
+    width: 420px;
+    margin-top: -10px;
+    margin-bottom: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}
+
+.my-information {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px 0px 20px;
+    align-items: center;
+    gap: 40px;
+    min-height: 100vh;
+}
+
+.my-information .text {
+    flex: 5;
+    padding: 20px;
+}
+
+.my-information .text h2 {
+    font-family: "MonteCarlo", cursive;
+    font-weight: bolder;
+    font-style: normal;
+    font-size: 70px;
+    padding: 10px 20px 0px 10px;
+    text-align: center;
+}
+
+.my-information .headshot {
+    flex: 2.2;
+    display: flex;
+    justify-content: right;
+}
+
+.my-information .headshot img {
+    border-radius: 50%;
+}
+
+.my-information .text p {
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+.header-right {
+    margin-top: 0px;
+    justify-content: center;
+    display: flex;
+    gap: 25px;
+}
+
+/* contact */
+.contact {
+    position: relative;
+}
+
+/* about me section */
+.about-me {
+    padding: 80px 0;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.about-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    font-family: "MonteCarlo", cursive;
+    font-size: 60px;
+    font-weight: bolder;
+    margin-bottom: 30px;
+    color: #1c1c1c;
+    text-align: left;
+}
+
+.about-text p {
+    font-family: "Lato", sans-serif;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #262626;
+    text-align: justify;
+    margin-bottom: 0;
+}
+
+.about-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.about-photo {
+    width: 400px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* contact section*/
+.contact {
+    padding: 40px 0 20px 0;
+    background: rgba(255, 255, 255, 0.05);
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact .content {
+    margin: 0 auto;
+    padding: 20px 40px;
+    width: 100%;
+}
+
+.contact .content>h2 {
+    font-family: "MonteCarlo", cursive;
+    font-size: 60px;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    position: relative;
+    /* z-index: 10; */
+}
+
+.contact .content>p {
+    font-family: "Lato", sans-serif;
+    font-size: 18px;
+    text-align: center;
+    color: #666;
+    margin-bottom: 50px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact .container {
+
+    gap: 60px;
+    align-items: flex-start;
+}
+
+.contactForm {
+    height: 500px;
+    width: 600px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 15px;
+    margin-left: 30%;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: #666;
+}
+
+.contactForm h2 {
+    font-family: "Lato", sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.contactForm .inputBox {
+    
+    margin-bottom: 30px;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea {
+    width: 100%;
+    padding: 15px 0;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #ddd;
+    outline: none;
+    background: transparent;
+    font-family: "Lato", sans-serif;
+    
+}
+
+.contactForm .inputBox textarea {
+    min-height: 100px;
+    resize: vertical; 
+} 
+
+
+.contactForm .inputBox input[type="submit"] {
+    background-color: #ffbb49;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 25px;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: auto;
+    min-width: 120px;
+}
+
+.contactForm .inputBox input[type="submit"]:hover {
+    transform: translateY(-2px);
+
+}
